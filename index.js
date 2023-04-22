@@ -9,15 +9,17 @@ function onSubmit(e){
     const {
         elements: {login, password},
     } = e.currentTarget;
-    if(login.value === "" || password.value === ""){
+    if (login.value === "" || password.value === ""){
         console.log("Заповніть обов'язкові поля");
         return;
     }
+    
     console.log(login.value);
     console.log(password.value);
 
     const user = document.querySelector("#login").value;
     const user1 = document.querySelector("#password").value;
+    
     document.querySelector("#user").innerHTML = user;
     document.querySelector("#user1").innerHTML = user1;
 
